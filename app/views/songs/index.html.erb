@@ -1,0 +1,13 @@
+<h1>Welcome to the Songs Library</h1>
+<h2>Music So Good You Can Taste It!</h2>
+<br>
+  <tbody>
+  <% @songs.each do |song| %>
+    <tr>
+      <td><%= link_to song.title, song %></td>
+      <td><%= song.release_year %></td>
+      <td><%= song.genre %></td>
+      <td><%= song.artist_name %></td>
+      <% end %>
+    </tr>
+  </tbody>
